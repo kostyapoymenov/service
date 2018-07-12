@@ -12,6 +12,9 @@ $(document).ready(function(){
             },
             768: {
                 items: 3
+            },
+            769: {
+                items: 5
             }
         }
     });
