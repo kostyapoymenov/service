@@ -1,0 +1,185 @@
+extends ../loyout
+
+block variables
+    - var title= "Acer"
+
+block content
+    .wrapper
+        header.header.container
+            .header-logo
+                a.header-logo__link
+                    img.header-logo__img(src="images/icons/logo.png" alt="логотип")
+            .header-city
+                span.header-city__title Ваш город:
+                select.header-select
+                    option.header-select__option(selected) Санкт-Петербург
+                    option.header-select__option Москва
+                    option.header-select__option Белгород
+                    option.header-select__option Волгоград
+            .header-tel
+                a.header-number(href="tel:88126481493") 8(812)648-14-93
+        .header-mob
+            .header-city
+                span.header-city__title Ваш город:
+                select.header-select
+                    option.header-select__option(selected) Санкт-Петербург
+                    option.header-select__option Москва
+                    option.header-select__option Белгород
+                    option.header-select__option Волгоград
+        section.section-first
+            .container
+                .first-top
+                    h1.first-title Сервисный центр Acer в Санкт-Петербурге
+                    form.form
+                        .form__title Ремонт любого устройства за 1 день:
+                        input.form__input(type="text" value="Ваш телефон*")
+                        button.btn Обратиться в сервисный центр
+                .first-bottom
+                    img.first-bottom__img.first-bottom__img--left(src="images/content/phone-one.png")
+                    img.first-bottom__img(src="images/content/tablet-one.png")
+                    img.first-bottom__img.first-bottom__img--right(src="images/content/loptop-one.png")
+        section.section-advantages
+            .advant-item.advant-item--left
+                .advant-item__icon
+                    img.advant-item__img(src="images/content/time.png" alt="")
+                .advant-item__text Срочный ремонт
+                    br
+                    | от 30 минут
+            .advant-item.advant-item--center
+                .advant-item__icon
+                    img.advant-item__img(src="images/content/moto.png" alt="")
+                .advant-item__text Выезд мастера, услуги курьера — бесплатно*
+            .advant-item.advant-item--right
+                .advant-item__icon
+                    img.advant-item__img(src="images/content/guarantee.png" alt="")
+                .advant-item__text Гарантия на работы
+                    br
+                    | и запчасти до 2 лет
+        section.section-repairs
+            .container
+                .section-title
+                    h2.section-title__text Мы ремонтируем
+                .repairs
+                    .repairs-item
+                        .repairs-item__title Смартфоны
+                        .repairs-item__icon
+                            img.repairs-item__img(src="images/content/smartphone.png" alt="")
+                    .repairs-item
+                        .repairs-item__title Ноутбуки
+                        .repairs-item__icon
+                            img.repairs-item__img(src="images/content/loptop1.png" alt="")
+                    .repairs-item
+                        .repairs-item__title Планшеты
+                        .repairs-item__icon
+                            img.repairs-item__img(src="images/content/tablets.png" alt="")
+        section.section-about
+            .container
+                .section-title
+                    h2.section-title__text.section-title__text--line Сервисный центр ACER
+                .section-subtitle
+                    h2.section-subtitle__text Мы решим Вашу проблему!
+                .about
+                    .about__text Техника Acer известна своим стилем и качеством, однако и она не вечна и не безупречна. Чаще всего техника Acer ломается из-за небрежного с ней обращения — поврежденные матрицы и разбитые тачскрины, погнутые корпуса смартфонов и залитые клавиатуры — вот наиболее частые случаи повреждений, с которыми маки и айфоны попадают к нам в сервисный центр. Наше мастера и инженеры, имя огромный опыт работы, прекрасно справляются с такими проблемами за кратчайшие сроки.
+                    .about__text Менее распространенные поломки — это заводской брак или износ оборудования. Невооруженным взглядом часто невозможно определить, что стало причиной появления вертикальных полос на мониторе или внезапного прекращения работы системного блока. В нашем сервисе оборудован специальный диагностический центр, что позволяет точно и быстро определить неисправность и «вылечить» ее без лишних временных и материальных затрат.
+                    .about__text В нашем сервисе используются только оригинальные детали Acer. Средний срок ремонта - 3 дня, но в 50% случаев проблема с техникой решается в день обращения. Доставка техники в сервис и обратно по Вашему желанию может осуществляться курьером. На все детали и выполненные работы мы предоставляем гарантию сроком до 3-х лет.
+        section.section-outline
+            .container
+                .section-title
+                    h2.section-title__text Схема работы
+                .outline
+                    .outline-row.outline-row--three
+                        .outline-item
+                            .outline-item__left 01
+                            .outline-item__right
+                                .outline-item__title Заявка на ремонт
+                                .outline-item__text Вы оставляете заявку на сайте или звоните по телефону
+                        .outline-item.outline-item--mob
+                            .outline-item__left 02
+                            .outline-item__right
+                                .outline-item__title Согласование
+                                .outline-item__text Оператор, консультирует, оформляет заявку
+                        .outline-item
+                            .outline-item__left 03
+                            .outline-item__right
+                                .outline-item__title Диагностика
+                                .outline-item__text Мы отправляем курьера за устройством или Вы привозите устройство самостоятельно. Делаем диагностику и озвучиваем стоимость работы
+                        .outline-item.outline-item--mob
+                            .outline-item__left 04
+                            .outline-item__right
+                                .outline-item__title Ремонт
+                                .outline-item__text Если стоимость Вас устраивает, мастер назначает срок и приступает к ремонту. За диагностику и вызов курьера платить не нужно
+                        .outline-item
+                            .outline-item__left 05
+                            .outline-item__right
+                                .outline-item__title Итог
+                                .outline-item__text Как только устройство будет отремонтировано, оператор с Вами свяжется для согласования удобного времени и места доставки
+                    .outline-row.outline-row--two
+                        .outline-item
+                            .outline-item__left 02
+                            .outline-item__right
+                                .outline-item__title Согласование
+                                .outline-item__text Оператор, консультирует, оформляет заявку
+                        .outline-item
+                            .outline-item__left 04
+                            .outline-item__right
+                                .outline-item__title Ремонт
+                                .outline-item__text Если стоимость Вас устраивает, мастер назначает срок и приступает к ремонту. За диагностику и вызов курьера платить не нужно
+                .attention
+                    .attention-block
+                        .attention-block__title Внимание
+                        .attention-block__text Мы составляем договор на оказание услуг с каждым клиентом. Вы не рискуете быть обманутыми
+        section.section-feedback
+            .container
+                .section-title
+                    h2.section-title__text Отзывы о сервисном центре
+                .feedback-slider
+                    .feedback-block.owl-carousel
+                        .feedback-block__item
+                        .feedback-block__item
+                        .feedback-block__item
+                        .feedback-block__item
+                        .feedback-block__item
+                        .feedback-block__item
+                        .feedback-block__item
+                        .feedback-block__item
+                    .slider-nav
+                        .slider-nav__item.slider-nav__item--prev
+                            svg.slider-nav__svg.slider-nav__svg--prev(width="100%" height="100%")
+                                use(xlink:href="images/icons/sprite.svg#chevron")
+                        .slider-nav__item.slider-nav__item--next
+                            svg.slider-nav__svg.slider-nav__svg--next(width="100%" height="100%")
+                                use(xlink:href="images/icons/sprite.svg#chevron")
+        section.section-order
+            .container
+                .order
+                    .order__left
+                        .order__img
+                    .order__right
+                        form.form
+                            .form__title Если у Вас остались вопросы — оставьте заявку и мы перезвоним Вам в течение 5 минут:
+                            input.form__input(type="text" value="Ваш телефон*")
+                            button.btn Обратиться в сервисный центр
+        section.section-footer
+            .container
+                .footer
+                    .footer-top
+                        .footer-left
+                            .footer-left__logo
+                                img.footer-left__img(src="images/icons/logo-white.png")
+                            ul.footer-list
+                                li.footer-list__item
+                                    a.footer-list__link(href="#") Ремонт смартфонов
+                                li.footer-list__item
+                                    a.footer-list__link(href="#") Ремонт планшетов
+                                li.footer-list__item
+                                    a.footer-list__link(href="#") Ремонт ноутбуков
+                        .footer-right
+                            .footer-info
+                                .footer-adress г.Санкт-Петербург,
+                                    br
+                                    | Мучной переулок, д.3А
+                                .footer-tel
+                                    a.footer-tel__link(href="tel:88126481493") 8(812)648-14-93
+                                .footer-time Ежедневно с 9:00-21:00
+                            .map#map
+            .footer-bottom *Информация, размещенная на сайте, не является публичной офертой и носит ознакомительный характер. Цены указаны за услугу, запчасти в эту стоимость не входят.

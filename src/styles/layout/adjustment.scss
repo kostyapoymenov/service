@@ -1,0 +1,65 @@
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width:100%;
+  max-width: rem(990px);
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn {
+  background-color: transparent;
+  width: 100%;
+  border:1px solid $white;
+  border-radius: 5px;
+  transition: all .3s;
+  color: $white;
+  text-transform: uppercase;
+  padding:rem(10px);
+  @include font-size(21px);
+  font-weight: 500;
+  &:hover {
+    background-color: $white;
+    color: $grey;
+  }
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title__text {
+  display: inline-block;
+  font-family: "Open Sans";
+  @include font-size(38px);
+  font-weight: 300;
+  color: $darkGrey;
+  text-transform: uppercase;
+  text-align: center;
+  padding:rem(40px) 0;
+  &.section-title__text--line {
+    padding-bottom: rem(10px);
+    border-bottom: 1px solid $grey;
+  }
+  @include phones {
+    @include font-size(32px);
+  }
+}
+
+.section-subtitle {
+  text-align: center;
+}
+
+.section-subtitle__text {
+  display: inline-block;
+  padding: rem(15px) 0;
+  font-family: "Open Sans";
+  @include font-size(35px);
+  font-weight: 300;
+  color: $darkGrey;
+}
